@@ -1,0 +1,14 @@
+<h1>Judge text</h1>
+
+<p>短文を打ち込んでみて誹謗中傷の可能性がないか調べてみましょう</p>
+
+<div>
+    <form action="" method="POST">{%csrf_token%}
+        <input type="text" name="value">
+        <button type="submit">検証する</button>
+    </form>
+</div>
+<p>入力文<h3>{{text}}</h3></p>
+
+<h1>{{result}}</h1>
+<p>誹謗中傷度: ({{judge}})</p>
